@@ -1,0 +1,101 @@
+@import "../styles/_responsive.scss";
+.headline {
+  font-size: 43px;
+  text-wrap: balance;
+  font-weight: bold;
+}
+
+.flex {
+  align-items: center;
+  color: black;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1360px;
+  background-color: #f5f5f7;
+  padding-top: 118px;
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.figure {
+  width: 533px;
+  height: 450px;
+  background-size: 533px 450px;
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/v/apple-tv-plus/ag/images/overview/student_plan__bm7yp0v4tf6u_large.jpg);
+  min-width: 544px;
+}
+// mx-auto mt-32 flex w-full max-w-[1360px] flex-col gap-y-4 bg-light-gray px-10 py-8 md:px-28 md:py-20
+
+.ohalf {
+  width: 50%;
+  padding: 0 3em;
+  @include tablet {
+    width: 100%;
+  }
+}
+.shalf {
+  width: 50%;
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.tryOne {
+  color: #f7f7ff;
+  font-weight: bold;
+  background: linear-gradient(#030303, #141111);
+  padding: 10px 18px;
+  min-width: 23px;
+  border-radius: 980px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+}
+
+.card {
+  //   background-color: red;
+  min-width: 663px;
+  min-height: 494px;
+  margin-bottom: 1em;
+}
+
+.cardTop {
+  background-color: #f5f5f7;
+  color: black;
+  padding-top: 2em;
+}
+
+.twoCards {
+  display: flex;
+  justify-content: space-between;
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.buy {
+  background-color: rgb(41, 92, 233);
+  padding: 0.5em 1.3em;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+}
+
+.cardImage {
+  width: 663px;
+  height: 494px;
+  background-size: 663px 494px;
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/v/apple-tv-plus/ag/images/overview/apple_tv_4k_remote__igmcbznr1w2u_large.jpg);
+  position: relative;
+  left: 50%;
+  margin-left: -331.5px;
+  background-position: bottom;
+  bottom: 0;
+  z-index: -1;
+  order: 1;
+}
+// text-center font-display text-[28px] font-bold leading-[30px] md:text-[24px] lg:text-[48px] lg:leading-[52px]
