@@ -1,0 +1,63 @@
+@import "../styles/_responsive.scss";
+.headline {
+  text-align: center;
+  font-size: 43px;
+  text-wrap: balance;
+  font-weight: bold;
+}
+
+.flex {
+  align-items: center;
+  color: black;
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1360px;
+  padding: 2rem 2rem;
+  background-color: #f5f5f7;
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.figure {
+  width: 544px;
+  height: 330px;
+  background-size: 544px 330px;
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/v/apple-tv-plus/ag/images/overview/bundle__e93qdcv7mtm6_large.jpg);
+  margin-top: 116px;
+  margin-bottom: 118px;
+  min-width: 544px;
+}
+// mx-auto mt-32 flex w-full max-w-[1360px] flex-col gap-y-4 bg-light-gray px-10 py-8 md:px-28 md:py-20
+
+.ohalf {
+  width: 50%;
+  padding: 0 3em;
+  @include tablet {
+    width: 100%;
+  }
+}
+.shalf {
+  width: 50%;
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.tryOne {
+  color: #f7f7ff;
+  font-weight: bold;
+  background: linear-gradient(#030303, #141111);
+  padding: 10px 18px;
+  min-width: 23px;
+  border-radius: 980px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+}
+// text-center font-display text-[28px] font-bold leading-[30px] md:text-[24px] lg:text-[48px] lg:leading-[52px]

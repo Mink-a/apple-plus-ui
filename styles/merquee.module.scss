@@ -1,0 +1,96 @@
+.shows-section {
+    position: relative;
+    background: #000;
+    overflow: hidden;
+    padding-bottom: 100px;
+  
+    .marquee-wrapper {
+      display: flex;
+      position: relative;
+      overflow: hidden;
+  
+      &:hover ul {
+        animation-play-state: paused;
+      }
+    }
+  
+    ul {
+      flex-shrink: 0;
+      display: flex;
+      justify-content: space-around;
+      min-width: 100%;
+      animation: marquee 10s linear infinite;
+    }
+  
+    ul.marquee-one {
+      animation-duration: 70s;
+    }
+  
+    ul.marquee-two {
+      animation-duration: 60s;
+    }
+  
+    li {
+      width: 378px;
+      height: 212px;
+      border-radius: 10px;
+      background-size: cover;
+      position: relative;
+      margin: 0 10px 20px;
+      cursor: pointer;
+  
+      a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+      }
+  
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0;
+        transition: opacity 0.4s ease-out;
+      }
+  
+      button {
+        background: #fff;
+        padding: 14px 24px;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 980px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        transform: translate(-50%, -30%);
+        transition: all 0.4s ease-out;
+      }
+  
+      &:hover .overlay {
+        opacity: 0.4;
+      }
+  
+      &:hover button {
+        opacity: 0.9;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(calc(-100%));
+    }
+  }
+  
